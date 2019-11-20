@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import NasaList from './components/NasaList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {

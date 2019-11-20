@@ -1,11 +1,14 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 const NasaCard = props => {
   return (
     <div className="photo-list">
       <div className="bottom">
-        <img src={props.src} />
-        {/* <p>{props.film.release_date}</p> */}
+      <p><Button variant='outline-primary' onClick={props.subtractOne}>{'< BACK'}</Button>
+      <strong> {props.photoDate} </strong>
+      <Button variant='outline-primary' onClick={props.addOne}>{'FORWARD >'}</Button></p>
+      <img src={props.src} alt={props.alt} />
       </div>
     </div>
   );
