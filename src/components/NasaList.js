@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NasaCard from "./NasaCard";
-
+import Example from "./Carousel";
 
 
 export default function NasaList() {
@@ -41,7 +41,8 @@ export default function NasaList() {
 
   return (
     <div className="photo">
-      {<NasaCard src={photos} photoDate={photoDate} alt={photoTitle} addOne={addOne} subtractOne={subtractOne}/>
+    <Example src={photos} alt={photoTitle} />
+    {<NasaCard src={photos} photoDate={photoDate} alt={photoTitle} addOne={addOne} subtractOne={subtractOne}/>
       
       /* {photos.map(item => {
         return <NasaCard photo={item} />;
