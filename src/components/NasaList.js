@@ -41,7 +41,7 @@ export default function NasaList() {
 
   return (
     <div className="photo">
-    <Example src={photos} alt={photoTitle} />
+    <Example src={photos} alt={photoTitle} photoDate={photoDate} addOne={addOne} subtractOne={subtractOne} />
     {<NasaCard src={photos} photoDate={photoDate} alt={photoTitle} addOne={addOne} subtractOne={subtractOne}/>
       
       /* {photos.map(item => {
